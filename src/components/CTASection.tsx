@@ -30,9 +30,9 @@ const CTASection = () => {
       // Here we just simulate a successful submission
       await new Promise(resolve => setTimeout(resolve, 1000));
       
-      // Send email to info@DataDudes.ai
+      // Send email to erez@dataudes.ai
       console.log("Demo request submitted:", {
-        to: "info@DataDudes.ai",
+        to: "erez@dataudes.ai",
         subject: "Demo Request from ATIDOT.ai website",
         body: `
           Name: ${formData.name}
@@ -78,10 +78,6 @@ const CTASection = () => {
               className="bg-white text-brand-blue hover:bg-brand-amber hover:text-white transition-colors px-8 py-6 text-lg"
             >
               Get Demo
-            </Button>
-            
-            <Button variant="outline" className="border-white text-white hover:bg-white/20 px-8 py-6 text-lg">
-              Download Case Study
             </Button>
           </div>
           

@@ -1,9 +1,12 @@
 
 import { Button } from "@/components/ui/button";
 import { useState, useEffect } from "react";
+import { useNavigate, useLocation } from "react-router-dom";
 
 const Navbar = () => {
   const [scrolled, setScrolled] = useState(false);
+  const navigate = useNavigate();
+  const location = useLocation();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -15,17 +18,21 @@ const Navbar = () => {
 
   // Function to scroll to CTA section and trigger the demo button click
   const scrollToCta = () => {
-    const ctaSection = document.querySelector('.gradient-bg');
-    if (ctaSection) {
-      ctaSection.scrollIntoView({ behavior: 'smooth' });
-      
-      // Give time for the scroll to complete before attempting to click the button
-      setTimeout(() => {
-        const demoButton = document.querySelector('.gradient-bg .bg-white') as HTMLButtonElement;
-        if (demoButton) {
-          demoButton.click();
-        }
-      }, 1000);
+    if (location.pathname === '/') {
+      const ctaSection = document.querySelector('.gradient-bg');
+      if (ctaSection) {
+        ctaSection.scrollIntoView({ behavior: 'smooth' });
+        
+        // Give time for the scroll to complete before attempting to click the button
+        setTimeout(() => {
+          const demoButton = document.querySelector('.gradient-bg .bg-white') as HTMLButtonElement;
+          if (demoButton) {
+            demoButton.click();
+          }
+        }, 1000);
+      }
+    } else {
+      navigate('/contact');
     }
   };
 
@@ -37,27 +44,43 @@ const Navbar = () => {
     >
       <div className="container mx-auto px-4 flex items-center justify-between">
         <div className="flex items-center">
-          <span className="text-xl font-bold text-brand-blue">
+          <a href="/" className="text-xl font-bold text-brand-blue">
             ATIDOT<span className="text-brand-teal">.ai</span>
-          </span>
+          </a>
         </div>
 
         <nav className="hidden md:flex items-center space-x-6">
-          <a href="#problem" className="text-gray-600 hover:text-brand-blue transition-colors">
-            Problem
-          </a>
-          <a href="#solution" className="text-gray-600 hover:text-brand-blue transition-colors">
-            Solution
-          </a>
-          <a href="#features" className="text-gray-600 hover:text-brand-blue transition-colors">
-            Features
-          </a>
-          <a href="#benefits" className="text-gray-600 hover:text-brand-blue transition-colors">
-            Benefits
-          </a>
-          <a href="#how-it-works" className="text-gray-600 hover:text-brand-blue transition-colors">
-            How It Works
-          </a>
+          {location.pathname === '/' ? (
+            <>
+              <a href="#problem" className="text-gray-600 hover:text-brand-blue transition-colors">
+                Problem
+              </a>
+              <a href="#solution" className="text-gray-600 hover:text-brand-blue transition-colors">
+                Solution
+              </a>
+              <a href="#features" className="text-gray-600 hover:text-brand-blue transition-colors">
+                Features
+              </a>
+              <a href="#benefits" className="text-gray-600 hover:text-brand-blue transition-colors">
+                Benefits
+              </a>
+              <a href="#how-it-works" className="text-gray-600 hover:text-brand-blue transition-colors">
+                How It Works
+              </a>
+            </>
+          ) : (
+            <>
+              <a href="/" className="text-gray-600 hover:text-brand-blue transition-colors">
+                Home
+              </a>
+              <a href="/about" className="text-gray-600 hover:text-brand-blue transition-colors">
+                About
+              </a>
+              <a href="/contact" className="text-gray-600 hover:text-brand-blue transition-colors">
+                Contact
+              </a>
+            </>
+          )}
         </nav>
 
         <div>

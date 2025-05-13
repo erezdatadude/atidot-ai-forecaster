@@ -2,6 +2,22 @@
 import { Button } from "@/components/ui/button";
 
 const HeroSection = () => {
+  // Function to scroll to CTA section and trigger the demo button click
+  const scrollToCta = () => {
+    const ctaSection = document.querySelector('.gradient-bg');
+    if (ctaSection) {
+      ctaSection.scrollIntoView({ behavior: 'smooth' });
+      
+      // Give time for the scroll to complete before attempting to click the button
+      setTimeout(() => {
+        const demoButton = document.querySelector('.gradient-bg .bg-white') as HTMLButtonElement;
+        if (demoButton) {
+          demoButton.click();
+        }
+      }, 1000);
+    }
+  };
+
   return (
     <section className="pt-28 pb-20 md:pt-32 md:pb-28 relative overflow-hidden">
       {/* Background Decorations */}
@@ -27,11 +43,11 @@ const HeroSection = () => {
           </p>
 
           <div className="flex flex-col sm:flex-row justify-center gap-4">
-            <Button className="bg-brand-blue hover:bg-brand-teal text-white px-8 py-6 text-lg transition-colors">
+            <Button 
+              onClick={scrollToCta}
+              className="bg-brand-blue hover:bg-brand-teal text-white px-8 py-6 text-lg transition-colors"
+            >
               Get Demo
-            </Button>
-            <Button variant="outline" className="border-brand-blue text-brand-blue hover:bg-brand-blue/10 px-8 py-6 text-lg">
-              Learn More
             </Button>
           </div>
 
