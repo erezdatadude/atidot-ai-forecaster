@@ -13,6 +13,22 @@ const Navbar = () => {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
+  // Function to scroll to CTA section and trigger the demo button click
+  const scrollToCta = () => {
+    const ctaSection = document.querySelector('.gradient-bg');
+    if (ctaSection) {
+      ctaSection.scrollIntoView({ behavior: 'smooth' });
+      
+      // Give time for the scroll to complete before attempting to click the button
+      setTimeout(() => {
+        const demoButton = document.querySelector('.gradient-bg .bg-white') as HTMLButtonElement;
+        if (demoButton) {
+          demoButton.click();
+        }
+      }, 1000);
+    }
+  };
+
   return (
     <header
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
@@ -46,6 +62,7 @@ const Navbar = () => {
 
         <div>
           <Button
+            onClick={scrollToCta}
             className="bg-brand-blue hover:bg-brand-teal text-white transition-colors"
           >
             Get Demo

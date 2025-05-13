@@ -31,8 +31,8 @@ const FeaturesSection = () => {
     },
     {
       icon: <Gauge className="h-10 w-10 text-brand-teal" />,
-      title: "PowerBI Integration",
-      description: "Seamlessly integrate with your existing dashboards for immediate actionability."
+      title: "Universal Dashboard Compatibility",
+      description: "Export forecast data via CSV to any dashboard or BI tool of your choice."
     }
   ];
 

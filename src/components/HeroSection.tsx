@@ -28,7 +28,7 @@ const HeroSection = () => {
 
           <div className="flex flex-col sm:flex-row justify-center gap-4">
             <Button className="bg-brand-blue hover:bg-brand-teal text-white px-8 py-6 text-lg transition-colors">
-              Get a Personalized Demo
+              Get Demo
             </Button>
             <Button variant="outline" className="border-brand-blue text-brand-blue hover:bg-brand-blue/10 px-8 py-6 text-lg">
               Learn More
@@ -46,7 +46,7 @@ const HeroSection = () => {
             </div>
             <div className="p-4 rounded-lg bg-white shadow-md">
               <p className="font-bold text-3xl text-brand-blue">10k+</p>
-              <p className="text-gray-600 mt-2">SKU Combinations</p>
+              <p className="text-gray-600 mt-2">SKU/Client Combinations</p>
             </div>
             <div className="p-4 rounded-lg bg-white shadow-md">
               <p className="font-bold text-3xl text-brand-blue">24/7</p>
