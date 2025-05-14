@@ -4,24 +4,24 @@ import AnimatedCounter from "./AnimatedCounter";
 const BenefitsSection = () => {
   const benefits = [
     {
-      title: "Improve Forecast Accuracy",
-      description: "Achieve up to 30% greater accuracy compared to traditional forecasting methods."
+      title: "Enhance Forecast Accuracy",
+      description: "Work with AI insights that help improve accuracy while incorporating your team's expertise and judgment."
     },
     {
-      title: "Reduce Inventory Waste",
-      description: "Cut down safety stock and eliminate excess inventory while maintaining service levels."
+      title: "Optimize Inventory Levels",
+      description: "Make more informed decisions about safety stock and inventory positions through collaborative analysis."
     },
     {
-      title: "Prevent Costly Shortages",
-      description: "Anticipate demand spikes before they happen to prevent stockouts and lost sales."
+      title: "Anticipate Demand Changes",
+      description: "Get early warning signals about potential demand shifts, giving your team more time to investigate and respond."
     },
     {
-      title: "Empower Cross-Functional Teams",
-      description: "Give commercial, supply, and finance teams the data they need for aligned decision-making."
+      title: "Support Cross-Functional Teamwork",
+      description: "Provide a consistent forecast foundation that helps align commercial, supply chain, and finance teams."
     },
     {
-      title: "Respond to Market Shifts",
-      description: "React faster to external disruptions with early warning signals and scenario planning."
+      title: "Adapt to Market Changes",
+      description: "Respond faster to external disruptions with AI-assisted scenario planning that complements your analysis."
     }
   ];
 
@@ -30,10 +30,10 @@ const BenefitsSection = () => {
       <div className="container mx-auto px-4">
         <div className="text-center max-w-3xl mx-auto mb-16">
           <h2 className="text-3xl md:text-4xl font-bold mb-6 text-brand-blue">
-            Real Business Benefits
+            Working Together for Better Results
           </h2>
           <p className="text-lg text-gray-600">
-            ATIDOT.ai delivers tangible improvements that directly impact your bottom line.
+            When your team's expertise pairs with ATIDOT.ai's capabilities, you'll see tangible improvements across your business.
           </p>
         </div>
 
@@ -50,8 +50,8 @@ const BenefitsSection = () => {
           </div>
           
           <div className="lg:col-span-2">
-            <div className="bg-gradient-to-br from-brand-blue to-brand-teal rounded-xl p-8 text-white shadow-xl h-full flex flex-col justify-center">
-              <h3 className="text-2xl font-bold mb-10 text-center">The ATIDOT.ai Impact</h3>
+            <div className="bg-gradient-to-br from-brand-blue to-brand-purple rounded-xl p-8 text-white shadow-xl h-full flex flex-col justify-center">
+              <h3 className="text-2xl font-bold mb-10 text-center">The Collaborative Impact</h3>
               
               <div className="grid grid-cols-1 md:grid-cols-2 gap-10 mb-8">
                 <div className="text-center">
@@ -59,21 +59,21 @@ const BenefitsSection = () => {
                   <p className="mt-2 text-lg">Improved Forecast Accuracy</p>
                 </div>
                 <div className="text-center">
-                  <AnimatedCounter target={25} suffix="%" />
-                  <p className="mt-2 text-lg">Reduced Safety Stock</p>
+                  <p className="text-4xl font-bold">↑</p>
+                  <p className="mt-2 text-lg">Planning Efficiency</p>
                 </div>
                 <div className="text-center">
-                  <AnimatedCounter target={40} suffix="%" />
-                  <p className="mt-2 text-lg">Faster Response to Market Shifts</p>
+                  <p className="text-4xl font-bold">↑</p>
+                  <p className="mt-2 text-lg">Response to Market Changes</p>
                 </div>
                 <div className="text-center">
-                  <AnimatedCounter target={20} suffix="%" />
-                  <p className="mt-2 text-lg">Increase in Service Levels</p>
+                  <p className="text-4xl font-bold">↑</p>
+                  <p className="mt-2 text-lg">Service Level Performance</p>
                 </div>
               </div>
               
               <p className="text-center text-lg italic">
-                "ATIDOT.ai transformed how we manage our supply chain, giving us unprecedented visibility into future demand."
+                "ATIDOT.ai enhances how we manage our supply chain, working alongside our team to provide deeper insights into future demand."
               </p>
             </div>
           </div>

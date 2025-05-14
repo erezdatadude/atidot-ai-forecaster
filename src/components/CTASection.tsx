@@ -64,25 +64,25 @@ const CTASection = () => {
       <div className="container mx-auto px-4">
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-3xl md:text-4xl font-bold mb-6">
-            Let ATIDOT.ai Show You the Future
+            Let's Enhance Your Forecasting Together
           </h2>
           
           <p className="text-xl mb-10">
-            Ready to transform your forecasting and take control of your supply chain? 
-            Schedule a personalized demo today to see ATIDOT.ai in action with your data.
+            Ready to see how ATIDOT.ai can work alongside your team to improve forecasting accuracy and efficiency? 
+            Schedule a personalized demo to learn more about our collaborative approach.
           </p>
           
           <div className="flex flex-col sm:flex-row justify-center gap-4">
             <Button 
               onClick={() => setOpen(true)}
-              className="bg-white text-brand-blue hover:bg-brand-amber hover:text-white transition-colors px-8 py-6 text-lg"
+              className="bg-white text-brand-blue hover:bg-brand-lightblue hover:text-white transition-colors px-8 py-6 text-lg"
             >
               Get Demo
             </Button>
           </div>
           
           <p className="mt-8 text-sm opacity-90">
-            Join industry leaders who've already improved their forecasting capabilities
+            Join organizations who are enhancing their forecasting capabilities
           </p>
         </div>
       </div>
@@ -141,7 +141,7 @@ const CTASection = () => {
             </div>
             
             <DialogFooter className="mt-6">
-              <Button type="submit" disabled={isSubmitting} className="w-full bg-brand-blue hover:bg-brand-teal text-white">
+              <Button type="submit" disabled={isSubmitting} className="w-full bg-brand-blue hover:bg-brand-purple text-white">
                 {isSubmitting ? "Submitting..." : (
                   <>
                     <Check className="w-4 h-4 mr-2" />

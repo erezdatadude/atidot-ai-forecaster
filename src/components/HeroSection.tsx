@@ -21,31 +21,32 @@ const HeroSection = () => {
   return (
     <section className="pt-28 pb-20 md:pt-32 md:pb-28 relative overflow-hidden">
       {/* Background Decorations */}
-      <div className="absolute top-0 right-0 w-1/3 h-1/3 bg-gradient-to-br from-brand-blue/10 to-brand-teal/10 rounded-bl-full z-0"></div>
-      <div className="absolute bottom-0 left-0 w-1/4 h-1/4 bg-gradient-to-tr from-brand-amber/10 to-brand-teal/10 rounded-tr-full z-0"></div>
+      <div className="absolute top-0 right-0 w-1/3 h-1/3 bg-gradient-to-br from-brand-blue/10 to-brand-purple/10 rounded-bl-full z-0"></div>
+      <div className="absolute bottom-0 left-0 w-1/4 h-1/4 bg-gradient-to-tr from-brand-deepblue/10 to-brand-lightblue/10 rounded-tr-full z-0"></div>
       
       {/* Floating Elements */}
-      <div className="absolute top-1/4 right-1/4 w-12 h-12 bg-brand-teal/10 rounded-full animate-float" style={{ animationDelay: '0.5s' }}></div>
-      <div className="absolute bottom-1/3 left-1/5 w-16 h-16 bg-brand-amber/10 rounded-full animate-float" style={{ animationDelay: '1.5s' }}></div>
+      <div className="absolute top-1/4 right-1/4 w-12 h-12 bg-brand-purple/10 rounded-full animate-float" style={{ animationDelay: '0.5s' }}></div>
+      <div className="absolute bottom-1/3 left-1/5 w-16 h-16 bg-brand-lightblue/10 rounded-full animate-float" style={{ animationDelay: '1.5s' }}></div>
       
       <div className="container mx-auto px-4 relative z-10">
         <div className="text-center max-w-4xl mx-auto">
           <h1 className="text-4xl md:text-6xl font-bold mb-6 gradient-text">
-            ATIDOT<span className="text-brand-teal">.ai</span>
+            ATIDOT<span className="text-brand-purple">.ai</span>
           </h1>
           
           <p className="text-xl md:text-2xl font-medium mb-6 text-gray-700">
-            The Future of Forecasting Starts Now
+            Enhancing Your Forecasting Capabilities
           </p>
           
           <p className="text-lg md:text-xl mb-10 text-gray-600 max-w-3xl mx-auto">
-            ATIDOT.ai delivers next-generation AI-powered demand forecasts—real-time, granular, and built for scale.
+            ATIDOT.ai enhances your existing forecasting processes with AI-powered insights, 
+            working alongside your team's expertise to deliver more accurate, granular, and timely forecasts.
           </p>
 
           <div className="flex flex-col sm:flex-row justify-center gap-4">
             <Button 
               onClick={scrollToCta}
-              className="bg-brand-blue hover:bg-brand-teal text-white px-8 py-6 text-lg transition-colors"
+              className="bg-brand-blue hover:bg-brand-purple text-white px-8 py-6 text-lg transition-colors"
             >
               Get Demo
             </Button>

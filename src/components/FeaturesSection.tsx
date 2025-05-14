@@ -5,34 +5,34 @@ import { Database, Layers, Search, Gauge, ArrowRight, CheckCheck } from "lucide-
 const FeaturesSection = () => {
   const features = [
     {
-      icon: <Layers className="h-10 w-10 text-brand-teal" />,
-      title: "Granular Forecasting",
-      description: "Forecast at customer × SKU level with unprecedented detail and accuracy."
+      icon: <Layers className="h-10 w-10 text-brand-purple" />,
+      title: "Enhanced Granularity",
+      description: "Supplement your forecast process with customer × SKU level details for better planning."
     },
     {
-      icon: <ArrowRight className="h-10 w-10 text-brand-teal" />,
+      icon: <ArrowRight className="h-10 w-10 text-brand-purple" />,
       title: "52-Week Rolling Forecasts",
-      description: "Get weekly updated forecasts that extend a full year ahead for better planning."
+      description: "Extend your planning horizon with AI-enhanced forecasts that complement your team's work."
     },
     {
-      icon: <Search className="h-10 w-10 text-brand-teal" />,
-      title: "AI-Based Anomaly Detection",
-      description: "Automatically identify sudden spikes, cancellations, and market shifts before they impact your business."
+      icon: <Search className="h-10 w-10 text-brand-purple" />,
+      title: "Intelligent Anomaly Detection",
+      description: "Get early warnings about potential spikes or drops, giving your team more time to analyze and respond."
     },
     {
-      icon: <Database className="h-10 w-10 text-brand-teal" />,
-      title: "Automated Data Integration",
-      description: "Connect all your data sources through secure API/ETL for a complete picture."
+      icon: <Database className="h-10 w-10 text-brand-purple" />,
+      title: "Seamless Data Integration",
+      description: "Connect to your existing systems without disrupting your current workflows and processes."
     },
     {
-      icon: <CheckCheck className="h-10 w-10 text-brand-teal" />,
-      title: "Continuous Model Retraining",
-      description: "Models that learn and improve with every data point for ever-increasing accuracy."
+      icon: <CheckCheck className="h-10 w-10 text-brand-purple" />,
+      title: "Continuous Learning",
+      description: "The system improves by learning from your team's expertise, adjustments, and feedback over time."
     },
     {
-      icon: <Gauge className="h-10 w-10 text-brand-teal" />,
-      title: "Universal Dashboard Compatibility",
-      description: "Export forecast data via CSV to any dashboard or BI tool of your choice."
+      icon: <Gauge className="h-10 w-10 text-brand-purple" />,
+      title: "Dashboard Compatibility",
+      description: "Export forecast data via CSV to work with whichever dashboard or BI tool your team prefers."
     }
   ];
 
@@ -41,11 +41,11 @@ const FeaturesSection = () => {
       <div className="container mx-auto px-4">
         <div className="text-center max-w-3xl mx-auto mb-16">
           <h2 className="text-3xl md:text-4xl font-bold mb-6 text-brand-blue">
-            Key Features That Drive Results
+            Supportive Features For Your Team
           </h2>
           <p className="text-lg text-gray-600">
-            ATIDOT.ai combines sophisticated AI with powerful functionality to deliver 
-            a complete forecasting solution that grows with your business.
+            ATIDOT.ai brings powerful capabilities that work alongside your existing processes, 
+            enhancing your team's forecasting abilities without replacing their valuable expertise.
           </p>
         </div>
 
@@ -65,7 +65,7 @@ const FeaturesSection = () => {
 
         <div className="mt-16 text-center">
           <p className="text-brand-blue font-semibold text-lg">
-            And much more, all designed to scale across 10,000+ product-customer combinations
+            All designed to scale alongside your business needs across thousands of product-customer combinations
           </p>
         </div>
       </div>

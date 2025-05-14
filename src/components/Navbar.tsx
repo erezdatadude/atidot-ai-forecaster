@@ -45,7 +45,7 @@ const Navbar = () => {
       <div className="container mx-auto px-4 flex items-center justify-between">
         <div className="flex items-center">
           <a href="/" className="text-xl font-bold text-brand-blue">
-            ATIDOT<span className="text-brand-teal">.ai</span>
+            ATIDOT<span className="text-brand-purple">.ai</span>
           </a>
         </div>
 
@@ -53,10 +53,10 @@ const Navbar = () => {
           {location.pathname === '/' ? (
             <>
               <a href="#problem" className="text-gray-600 hover:text-brand-blue transition-colors">
-                Problem
+                Challenges
               </a>
               <a href="#solution" className="text-gray-600 hover:text-brand-blue transition-colors">
-                Solution
+                Enhancement
               </a>
               <a href="#features" className="text-gray-600 hover:text-brand-blue transition-colors">
                 Features
@@ -86,7 +86,7 @@ const Navbar = () => {
         <div>
           <Button
             onClick={scrollToCta}
-            className="bg-brand-blue hover:bg-brand-teal text-white transition-colors"
+            className="bg-brand-blue hover:bg-brand-purple text-white transition-colors"
           >
             Get Demo
           </Button>

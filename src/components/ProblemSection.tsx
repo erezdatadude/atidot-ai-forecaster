@@ -2,30 +2,30 @@
 import { Card, CardContent } from "@/components/ui/card";
 
 const ProblemSection = () => {
-  const problems = [
+  const challenges = [
     {
-      title: "Reactive & Manual",
-      description: "Current forecasting relies on manual data entry, outdated methods, and delayed responses to market changes."
+      title: "Time-Intensive Processes",
+      description: "Current forecasting methods often require significant time investment from your team, taking focus away from strategic analysis."
     },
     {
-      title: "Limited Granularity",
-      description: "Legacy tools struggle with SKU-level forecasting, failing to provide the detail needed for precise inventory management."
+      title: "Data Integration Challenges",
+      description: "Bringing together data from multiple sources can be challenging, even with the best manual processes."
     },
     {
-      title: "Poor Long-Term Planning",
-      description: "Most systems can't accurately predict beyond a few weeks, making strategic planning difficult."
+      title: "Long-Term Planning",
+      description: "Creating accurate long-range forecasts is challenging with traditional methods, even for experienced teams."
     },
     {
-      title: "Market Volatility",
-      description: "Traditional systems falter when facing unexpected market shifts, leading to costly misjudgments."
+      title: "Market Volatility Response",
+      description: "Quickly adapting forecasts to unexpected market changes requires significant effort and analysis."
     },
     {
-      title: "Inventory Misalignment",
-      description: "Inaccurate forecasts lead to stockouts or overproduction, causing financial losses and customer dissatisfaction."
+      title: "Resource Balancing",
+      description: "Balancing inventory optimization with customer service levels is increasingly complex in today's market."
     },
     {
-      title: "Data Silos",
-      description: "Critical information remains trapped in disconnected systems, preventing holistic forecasting."
+      title: "Cross-Functional Alignment",
+      description: "Ensuring all departments work from the same forecast data can be challenging without integrated systems."
     }
   ];
 
@@ -34,23 +34,23 @@ const ProblemSection = () => {
       <div className="container mx-auto px-4">
         <div className="text-center max-w-3xl mx-auto mb-16">
           <h2 className="text-3xl md:text-4xl font-bold mb-6 text-brand-blue">
-            The Problem With Traditional Forecasting
+            Common Forecasting Challenges
           </h2>
           <p className="text-lg text-gray-600">
-            In today's fast-paced market, legacy forecasting tools are holding businesses back,
-            creating costly inefficiencies and missed opportunities.
+            Even the most experienced forecasting teams face these common challenges 
+            in today's complex and fast-moving market environment.
           </p>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-          {problems.map((problem, index) => (
+          {challenges.map((challenge, index) => (
             <Card key={index} className="border-none shadow-lg hover:shadow-xl transition-shadow">
               <CardContent className="p-6">
-                <div className="h-12 w-12 rounded-full bg-gradient-to-r from-brand-blue to-brand-teal flex items-center justify-center text-white font-bold text-xl mb-4">
+                <div className="h-12 w-12 rounded-full bg-gradient-to-r from-brand-blue to-brand-purple flex items-center justify-center text-white font-bold text-xl mb-4">
                   {index + 1}
                 </div>
-                <h3 className="text-xl font-semibold mb-3 text-gray-800">{problem.title}</h3>
-                <p className="text-gray-600">{problem.description}</p>
+                <h3 className="text-xl font-semibold mb-3 text-gray-800">{challenge.title}</h3>
+                <p className="text-gray-600">{challenge.description}</p>
               </CardContent>
             </Card>
           ))}
