@@ -58,7 +58,7 @@ const AnimatedCounter = ({
   }, [target, duration, isVisible]);
 
   return (
-    <div ref={countRef} className="font-bold text-4xl md:text-5xl text-brand-blue">
+    <div ref={countRef} className="font-bold text-5xl md:text-6xl text-white animate-pulse">
       {prefix}{count.toFixed(decimals)}{suffix}
     </div>
   );

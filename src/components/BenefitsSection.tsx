@@ -59,16 +59,16 @@ const BenefitsSection = () => {
                   <p className="mt-2 text-lg">Improved Forecast Accuracy</p>
                 </div>
                 <div className="text-center">
-                  <p className="text-4xl font-bold">↑</p>
-                  <p className="mt-2 text-lg">Operational Efficiency</p>
+                  <AnimatedCounter target={25} suffix="%" />
+                  <p className="mt-2 text-lg">Reduced Safety Stock</p>
                 </div>
                 <div className="text-center">
-                  <p className="text-4xl font-bold">↑</p>
-                  <p className="mt-2 text-lg">Market Response Capability</p>
+                  <AnimatedCounter target={40} suffix="%" />
+                  <p className="mt-2 text-lg">Faster Response to Market Shifts</p>
                 </div>
                 <div className="text-center">
-                  <p className="text-4xl font-bold">↑</p>
-                  <p className="mt-2 text-lg">Service Level Performance</p>
+                  <AnimatedCounter target={20} suffix="%" />
+                  <p className="mt-2 text-lg">Increase in Service Levels</p>
                 </div>
               </div>
               
