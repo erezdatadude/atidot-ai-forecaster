@@ -2,13 +2,13 @@
 import { CheckCircle } from "lucide-react";
 
 const SolutionSection = () => {
-  const enhancements = [
-    "Augments your existing forecasting processes with AI-powered predictions across all products and customers—weekly and monthly—52 weeks ahead.",
-    "Seamlessly integrates data from your existing systems including ERP, CRM, and other sources your team already uses.",
-    "Provides anomaly detection and insights that complement your team's analysis and expertise.",
-    "Delivers continuous learning capabilities that improve over time as the system learns from your team's adjustments and feedback.",
-    "Scales effortlessly to handle thousands of SKU/Client combinations without performance degradation.",
-    "Adapts quickly to market shifts and seasonal patterns to support your team's planning efforts."
+  const capabilities = [
+    "Integrates AI-powered predictions across all products and customers—providing weekly and monthly forecasts 52 weeks ahead.",
+    "Seamlessly connects with existing ERP, CRM, and other data systems through secure API/ETL connections.",
+    "Identifies anomalies and provides actionable insights to drive improved forecast performance.",
+    "Features advanced machine learning capabilities that continuously refine accuracy through feedback loops.",
+    "Scales to handle thousands of SKU/Client combinations with consistent performance.",
+    "Adapts rapidly to market shifts and seasonal patterns through advanced pattern recognition."
   ];
 
   return (
@@ -20,20 +20,19 @@ const SolutionSection = () => {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div>
             <h2 className="text-3xl md:text-4xl font-bold mb-6 gradient-text">
-              Enhancing Your Forecasting Capabilities
+              Advanced Forecasting Technology
             </h2>
             
             <p className="text-lg text-gray-700 mb-8">
-              ATIDOT.ai works alongside your team's expertise, enhancing your existing 
-              processes with AI-powered insights—designed specifically to complement the 
-              valuable work your forecasting professionals already do.
+              ATIDOT.ai delivers cutting-edge AI-powered forecasting that augments your
+              existing processes with superior accuracy, granularity, and efficiency.
             </p>
             
             <div className="space-y-4">
-              {enhancements.map((enhancement, index) => (
+              {capabilities.map((capability, index) => (
                 <div key={index} className="flex items-start">
-                  <CheckCircle className="h-6 w-6 text-brand-purple mr-3 flex-shrink-0 mt-1" />
-                  <p className="text-gray-700">{enhancement}</p>
+                  <CheckCircle className="h-6 w-6 text-brand-blue mr-3 flex-shrink-0 mt-1" />
+                  <p className="text-gray-700">{capability}</p>
                 </div>
               ))}
             </div>
@@ -41,13 +40,13 @@ const SolutionSection = () => {
           
           <div className="relative p-4 bg-white rounded-lg shadow-xl">
             <div className="aspect-w-16 aspect-h-9">
-              <div className="w-full h-full bg-gradient-to-br from-brand-blue to-brand-purple rounded-lg flex items-center justify-center">
+              <div className="w-full h-full bg-gradient-to-br from-brand-blue to-brand-darkblue rounded-lg flex items-center justify-center">
                 <div className="text-center text-white p-8">
                   <div className="text-6xl font-bold mb-4">ATIDOT.ai</div>
                   <div className="text-xl">Dashboard Preview</div>
                   <div className="mt-6 text-sm">
-                    Visualize forecasts, track accuracy, and receive alerts in real-time,
-                    working hand-in-hand with your expertise
+                    Advanced visualization, accuracy tracking, and real-time alerting
+                    capabilities for superior forecasting performance
                   </div>
                 </div>
               </div>

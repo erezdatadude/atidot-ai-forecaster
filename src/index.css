@@ -17,7 +17,7 @@
     --primary: 210 79% 35%;
     --primary-foreground: 210 40% 98%;
 
-    --secondary: 260 30% 42%;
+    --secondary: 210 65% 42%;
     --secondary-foreground: 222.2 47.4% 11.2%;
 
     --muted: 210 40% 96.1%;
@@ -90,11 +90,11 @@
 
 @layer utilities {
   .gradient-text {
-    @apply bg-gradient-to-r from-brand-blue via-brand-purple to-brand-lightblue bg-clip-text text-transparent;
+    @apply bg-gradient-to-r from-brand-blue via-brand-blue2 to-brand-lightblue bg-clip-text text-transparent;
   }
   
   .gradient-bg {
-    @apply bg-gradient-to-r from-brand-blue to-brand-purple;
+    @apply bg-gradient-to-r from-brand-blue to-brand-darkblue;
   }
   
   .gradient-bg-light {

@@ -5,27 +5,27 @@ const ProblemSection = () => {
   const challenges = [
     {
       title: "Time-Intensive Processes",
-      description: "Current forecasting methods often require significant time investment from your team, taking focus away from strategic analysis."
+      description: "Traditional forecasting methods require significant time investment, limiting strategic analysis capabilities."
     },
     {
-      title: "Data Integration Challenges",
-      description: "Bringing together data from multiple sources can be challenging, even with the best manual processes."
+      title: "Data Integration Complexity",
+      description: "Integrating data from multiple sources creates significant challenges for manual forecasting processes."
     },
     {
-      title: "Long-Term Planning",
-      description: "Creating accurate long-range forecasts is challenging with traditional methods, even for experienced teams."
+      title: "Long-Term Planning Barriers",
+      description: "Creating accurate long-range forecasts presents significant challenges with conventional methodologies."
     },
     {
       title: "Market Volatility Response",
-      description: "Quickly adapting forecasts to unexpected market changes requires significant effort and analysis."
+      description: "Adapting forecasts quickly to unexpected market changes requires substantial analytical resources."
     },
     {
-      title: "Resource Balancing",
-      description: "Balancing inventory optimization with customer service levels is increasingly complex in today's market."
+      title: "Resource Optimization",
+      description: "Balancing inventory optimization with service level requirements presents increasingly complex challenges."
     },
     {
       title: "Cross-Functional Alignment",
-      description: "Ensuring all departments work from the same forecast data can be challenging without integrated systems."
+      description: "Ensuring unified forecast data across departments requires sophisticated integration systems."
     }
   ];
 
@@ -34,11 +34,11 @@ const ProblemSection = () => {
       <div className="container mx-auto px-4">
         <div className="text-center max-w-3xl mx-auto mb-16">
           <h2 className="text-3xl md:text-4xl font-bold mb-6 text-brand-blue">
-            Common Forecasting Challenges
+            Forecasting Challenges
           </h2>
           <p className="text-lg text-gray-600">
-            Even the most experienced forecasting teams face these common challenges 
-            in today's complex and fast-moving market environment.
+            Modern forecasting operations face significant obstacles in today's 
+            complex and fast-evolving market environment.
           </p>
         </div>
 
@@ -46,7 +46,7 @@ const ProblemSection = () => {
           {challenges.map((challenge, index) => (
             <Card key={index} className="border-none shadow-lg hover:shadow-xl transition-shadow">
               <CardContent className="p-6">
-                <div className="h-12 w-12 rounded-full bg-gradient-to-r from-brand-blue to-brand-purple flex items-center justify-center text-white font-bold text-xl mb-4">
+                <div className="h-12 w-12 rounded-full bg-gradient-to-r from-brand-blue to-brand-lightblue flex items-center justify-center text-white font-bold text-xl mb-4">
                   {index + 1}
                 </div>
                 <h3 className="text-xl font-semibold mb-3 text-gray-800">{challenge.title}</h3>

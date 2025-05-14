@@ -64,12 +64,12 @@ const CTASection = () => {
       <div className="container mx-auto px-4">
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-3xl md:text-4xl font-bold mb-6">
-            Let's Enhance Your Forecasting Together
+            Transform Your Forecasting Capabilities
           </h2>
           
           <p className="text-xl mb-10">
-            Ready to see how ATIDOT.ai can work alongside your team to improve forecasting accuracy and efficiency? 
-            Schedule a personalized demo to learn more about our collaborative approach.
+            Request a demonstration of ATIDOT.ai's advanced forecasting technology and discover 
+            how our platform can enhance your operational performance.
           </p>
           
           <div className="flex flex-col sm:flex-row justify-center gap-4">
@@ -77,12 +77,12 @@ const CTASection = () => {
               onClick={() => setOpen(true)}
               className="bg-white text-brand-blue hover:bg-brand-lightblue hover:text-white transition-colors px-8 py-6 text-lg"
             >
-              Get Demo
+              Request Demo
             </Button>
           </div>
           
           <p className="mt-8 text-sm opacity-90">
-            Join organizations who are enhancing their forecasting capabilities
+            Trusted by leading organizations for superior forecasting performance
           </p>
         </div>
       </div>
@@ -90,7 +90,7 @@ const CTASection = () => {
       <Dialog open={open} onOpenChange={setOpen}>
         <DialogContent className="sm:max-w-md">
           <DialogHeader>
-            <DialogTitle className="text-xl font-bold text-brand-blue">Get a Personalized Demo</DialogTitle>
+            <DialogTitle className="text-xl font-bold text-brand-blue">Request Platform Demonstration</DialogTitle>
           </DialogHeader>
           
           <form onSubmit={handleSubmit} className="mt-4 space-y-4">
@@ -141,7 +141,7 @@ const CTASection = () => {
             </div>
             
             <DialogFooter className="mt-6">
-              <Button type="submit" disabled={isSubmitting} className="w-full bg-brand-blue hover:bg-brand-purple text-white">
+              <Button type="submit" disabled={isSubmitting} className="w-full bg-brand-blue hover:bg-brand-darkblue text-white">
                 {isSubmitting ? "Submitting..." : (
                   <>
                     <Check className="w-4 h-4 mr-2" />

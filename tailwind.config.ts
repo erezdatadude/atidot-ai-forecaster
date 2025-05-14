@@ -68,9 +68,9 @@ export default {
 				},
 				brand: {
 					blue: '#0F5FA3',
-					purple: '#5B4B8A',
-					deepblue: '#033A78',
-					lightblue: '#4B9CD3',
+					darkblue: '#033A78',
+					lightblue: '#4B9CD3', 
+					blue2: '#1D73B2',
 					light: '#f4f9fc',
 				}
 			},

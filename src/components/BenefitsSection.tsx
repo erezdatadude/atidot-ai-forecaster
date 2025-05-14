@@ -4,24 +4,24 @@ import AnimatedCounter from "./AnimatedCounter";
 const BenefitsSection = () => {
   const benefits = [
     {
-      title: "Enhance Forecast Accuracy",
-      description: "Work with AI insights that help improve accuracy while incorporating your team's expertise and judgment."
+      title: "Superior Forecast Accuracy",
+      description: "Advanced algorithms deliver significantly higher accuracy rates across your product portfolio."
     },
     {
-      title: "Optimize Inventory Levels",
-      description: "Make more informed decisions about safety stock and inventory positions through collaborative analysis."
+      title: "Optimized Inventory Management",
+      description: "Data-driven inventory decisions based on precise demand forecasts across all SKUs."
     },
     {
-      title: "Anticipate Demand Changes",
-      description: "Get early warning signals about potential demand shifts, giving your team more time to investigate and respond."
+      title: "Proactive Demand Management",
+      description: "Early detection systems for demand shifts enable strategic response before impact occurs."
     },
     {
-      title: "Support Cross-Functional Teamwork",
-      description: "Provide a consistent forecast foundation that helps align commercial, supply chain, and finance teams."
+      title: "Cross-Functional Integration",
+      description: "Unified forecast platform ensures alignment between commercial, supply chain, and finance teams."
     },
     {
-      title: "Adapt to Market Changes",
-      description: "Respond faster to external disruptions with AI-assisted scenario planning that complements your analysis."
+      title: "Market Volatility Adaptation",
+      description: "AI-assisted scenario analysis enables rapid response to market disruptions and opportunities."
     }
   ];
 
@@ -30,10 +30,10 @@ const BenefitsSection = () => {
       <div className="container mx-auto px-4">
         <div className="text-center max-w-3xl mx-auto mb-16">
           <h2 className="text-3xl md:text-4xl font-bold mb-6 text-brand-blue">
-            Working Together for Better Results
+            Performance Advantages
           </h2>
           <p className="text-lg text-gray-600">
-            When your team's expertise pairs with ATIDOT.ai's capabilities, you'll see tangible improvements across your business.
+            ATIDOT.ai delivers measurable improvements across key performance indicators for your organization.
           </p>
         </div>
 
@@ -50,8 +50,8 @@ const BenefitsSection = () => {
           </div>
           
           <div className="lg:col-span-2">
-            <div className="bg-gradient-to-br from-brand-blue to-brand-purple rounded-xl p-8 text-white shadow-xl h-full flex flex-col justify-center">
-              <h3 className="text-2xl font-bold mb-10 text-center">The Collaborative Impact</h3>
+            <div className="bg-gradient-to-br from-brand-blue to-brand-darkblue rounded-xl p-8 text-white shadow-xl h-full flex flex-col justify-center">
+              <h3 className="text-2xl font-bold mb-10 text-center">Performance Impact</h3>
               
               <div className="grid grid-cols-1 md:grid-cols-2 gap-10 mb-8">
                 <div className="text-center">
@@ -60,11 +60,11 @@ const BenefitsSection = () => {
                 </div>
                 <div className="text-center">
                   <p className="text-4xl font-bold">↑</p>
-                  <p className="mt-2 text-lg">Planning Efficiency</p>
+                  <p className="mt-2 text-lg">Operational Efficiency</p>
                 </div>
                 <div className="text-center">
                   <p className="text-4xl font-bold">↑</p>
-                  <p className="mt-2 text-lg">Response to Market Changes</p>
+                  <p className="mt-2 text-lg">Market Response Capability</p>
                 </div>
                 <div className="text-center">
                   <p className="text-4xl font-bold">↑</p>
@@ -73,7 +73,7 @@ const BenefitsSection = () => {
               </div>
               
               <p className="text-center text-lg italic">
-                "ATIDOT.ai enhances how we manage our supply chain, working alongside our team to provide deeper insights into future demand."
+                "ATIDOT.ai has transformed our demand forecasting capabilities with its advanced analytics platform."
               </p>
             </div>
           </div>

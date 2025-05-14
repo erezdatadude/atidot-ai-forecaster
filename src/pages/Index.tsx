@@ -25,7 +25,7 @@ const Index = () => {
           <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
             <div>
               <h3 className="font-bold text-xl mb-4">ATIDOT.ai</h3>
-              <p className="text-gray-400">Enhancing Forecasting Capabilities</p>
+              <p className="text-gray-400">Advanced Forecasting Technology</p>
             </div>
             
             <div>
@@ -33,7 +33,7 @@ const Index = () => {
               <ul className="space-y-2 text-gray-400">
                 <li><a href="#features" className="hover:text-white transition-colors">Features</a></li>
                 <li><a href="#benefits" className="hover:text-white transition-colors">Benefits</a></li>
-                <li><a href="#how-it-works" className="hover:text-white transition-colors">How It Works</a></li>
+                <li><a href="#how-it-works" className="hover:text-white transition-colors">Implementation</a></li>
               </ul>
             </div>
             
