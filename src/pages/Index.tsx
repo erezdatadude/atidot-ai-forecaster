@@ -48,7 +48,7 @@ const Index = () => {
             <div>
               <h4 className="font-semibold mb-4">Contact</h4>
               <ul className="space-y-2 text-gray-400">
-                <li><a href="mailto:erez@dataudes.ai" className="hover:text-white transition-colors">Email: erez@dataudes.ai</a></li>
+                <li><a href="mailto:erez@dataDudes.ai" className="hover:text-white transition-colors">Email: erez@dataDudes.ai</a></li>
                 <li><a href="/contact" className="hover:text-white transition-colors">Contact Form</a></li>
               </ul>
             </div>

@@ -30,9 +30,9 @@ const CTASection = () => {
       // Here we just simulate a successful submission
       await new Promise(resolve => setTimeout(resolve, 1000));
       
-      // Send email to erez@dataudes.ai
+      // Send email to erez@dataDudes.ai
       console.log("Demo request submitted:", {
-        to: "erez@dataudes.ai",
+        to: "erez@dataDudes.ai",
         subject: "Demo Request from ATIDOT.ai website",
         body: `
           Name: ${formData.name}
