@@ -25,7 +25,7 @@ const Index = () => {
           <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
             <div>
               <h3 className="font-bold text-xl mb-4">ATIDOT.ai</h3>
-              <p className="text-gray-400">Advanced Forecasting Technology</p>
+              <p className="text-gray-400">AI-Based Sales & Demand Forecasting</p>
             </div>
             
             <div>
@@ -46,10 +46,10 @@ const Index = () => {
             </div>
             
             <div>
-              <h4 className="font-semibold mb-4">Company</h4>
+              <h4 className="font-semibold mb-4">Contact</h4>
               <ul className="space-y-2 text-gray-400">
-                <li><a href="/about" className="hover:text-white transition-colors">About Us</a></li>
-                <li><a href="/contact" className="hover:text-white transition-colors">Contact</a></li>
+                <li><a href="mailto:erez@dataudes.ai" className="hover:text-white transition-colors">Email: erez@dataudes.ai</a></li>
+                <li><a href="/contact" className="hover:text-white transition-colors">Contact Form</a></li>
               </ul>
             </div>
           </div>

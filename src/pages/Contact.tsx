@@ -30,9 +30,9 @@ const Contact = () => {
       // Here we just simulate a successful submission
       await new Promise(resolve => setTimeout(resolve, 1000));
       
-      // Send email to erez@datadudes.ai
+      // Send email to erez@dataudes.ai
       console.log("Demo request submitted:", {
-        to: "erez@datadudes.ai",
+        to: "erez@dataudes.ai",
         subject: "Contact Request from ATIDOT.ai website",
         body: `
           Name: ${formData.name}
@@ -71,7 +71,7 @@ const Contact = () => {
           
           <div className="max-w-xl mx-auto mb-10 text-center">
             <p className="text-xl text-gray-700">
-              Ready to transform your forecasting capabilities? We're here to help.
+              Ready to transform your sales and demand forecasting capabilities? We're here to help.
             </p>
           </div>
           
@@ -155,7 +155,7 @@ const Contact = () => {
           <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
             <div>
               <h3 className="font-bold text-xl mb-4">ATIDOT.ai</h3>
-              <p className="text-gray-400">The Future of Forecasting Starts Now</p>
+              <p className="text-gray-400">AI-Based Sales & Demand Forecasting</p>
             </div>
             
             <div>
@@ -177,10 +177,10 @@ const Contact = () => {
             </div>
             
             <div>
-              <h4 className="font-semibold mb-4">Company</h4>
+              <h4 className="font-semibold mb-4">Contact</h4>
               <ul className="space-y-2 text-gray-400">
-                <li><a href="/about" className="hover:text-white transition-colors">About Us</a></li>
-                <li><a href="/contact" className="hover:text-white transition-colors">Contact</a></li>
+                <li><a href="mailto:erez@dataudes.ai" className="text-gray-400 hover:text-white transition-colors">Email: erez@dataudes.ai</a></li>
+                <li><a href="/contact" className="hover:text-white transition-colors">Contact Form</a></li>
               </ul>
             </div>
           </div>

@@ -35,12 +35,12 @@ const HeroSection = () => {
           </h1>
           
           <p className="text-xl md:text-2xl font-medium mb-6 text-gray-700">
-            Advanced Forecasting Intelligence
+            AI-Based Advanced Time-Series Modeling for Sales & Demand Forecasting
           </p>
           
           <p className="text-lg md:text-xl mb-10 text-gray-600 max-w-3xl mx-auto">
-            ATIDOT.ai delivers cutting-edge AI-powered forecasting technology that enhances 
-            accuracy, granularity, and efficiency across your entire forecasting process.
+            ATIDOT.ai delivers cutting-edge AI-powered time-series forecasting technology that enhances 
+            accuracy, granularity, and efficiency across your entire sales and demand forecasting process.
           </p>
 
           <div className="flex flex-col sm:flex-row justify-center gap-4">
@@ -52,7 +52,7 @@ const HeroSection = () => {
             </Button>
           </div>
 
-          <div className="mt-16 grid grid-cols-2 md:grid-cols-4 gap-8">
+          <div className="mt-16 grid grid-cols-2 md:grid-cols-3 gap-8">
             <div className="p-4 rounded-lg bg-white shadow-md">
               <p className="font-bold text-3xl text-brand-blue">30%+</p>
               <p className="text-gray-600 mt-2">Improved Forecast Accuracy</p>
@@ -64,10 +64,6 @@ const HeroSection = () => {
             <div className="p-4 rounded-lg bg-white shadow-md">
               <p className="font-bold text-3xl text-brand-blue">10k+</p>
               <p className="text-gray-600 mt-2">SKU/Client Combinations</p>
-            </div>
-            <div className="p-4 rounded-lg bg-white shadow-md">
-              <p className="font-bold text-3xl text-brand-blue">24/7</p>
-              <p className="text-gray-600 mt-2">Real-time Updates</p>
             </div>
           </div>
         </div>

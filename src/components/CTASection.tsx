@@ -30,9 +30,9 @@ const CTASection = () => {
       // Here we just simulate a successful submission
       await new Promise(resolve => setTimeout(resolve, 1000));
       
-      // Send email to erez@datadudes.ai
+      // Send email to erez@dataudes.ai
       console.log("Demo request submitted:", {
-        to: "erez@datadudes.ai",
+        to: "erez@dataudes.ai",
         subject: "Demo Request from ATIDOT.ai website",
         body: `
           Name: ${formData.name}
@@ -64,11 +64,11 @@ const CTASection = () => {
       <div className="container mx-auto px-4">
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-3xl md:text-4xl font-bold mb-6">
-            Transform Your Forecasting Capabilities
+            Transform Your Sales & Demand Forecasting
           </h2>
           
           <p className="text-xl mb-10">
-            Request a demonstration of ATIDOT.ai's advanced forecasting technology and discover 
+            Request a demonstration of ATIDOT.ai's advanced time-series forecasting technology and discover 
             how our platform can enhance your operational performance.
           </p>
           
