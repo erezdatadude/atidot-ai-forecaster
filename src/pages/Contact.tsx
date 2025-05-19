@@ -1,11 +1,12 @@
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import Navbar from "@/components/Navbar";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { useToast } from "@/hooks/use-toast";
 import { Check } from "lucide-react";
+import { initEmailJS, sendEmail } from "@/services/emailService";
 
 const Contact = () => {
   const [isSubmitting, setIsSubmitting] = useState(false);
@@ -15,6 +16,11 @@ const Contact = () => {
     email: "",
   });
   const { toast } = useToast();
+
+  useEffect(() => {
+    // Initialize EmailJS when component mounts
+    initEmailJS();
+  }, []);
 
   const handleInputChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     const { name, value } = e.target;
@@ -26,32 +32,27 @@ const Contact = () => {
     setIsSubmitting(true);
 
     try {
-      // In a real implementation, you'd send this data to a backend service
-      // Here we just simulate a successful submission
-      await new Promise(resolve => setTimeout(resolve, 1000));
+      const success = await sendEmail(formData);
       
-      // Send email to info@atidot.ai
-      console.log("Demo request submitted:", {
-        to: "info@atidot.ai",
-        subject: "Contact Request from ATIDOT.ai website",
-        body: `
-          Name: ${formData.name}
-          Company: ${formData.company}
-          Email: ${formData.email}
-        `
-      });
-      
-      toast({
-        title: "Request submitted!",
-        description: "We'll get back to you shortly.",
-      });
-      
-      setFormData({ name: "", company: "", email: "" });
+      if (success) {
+        toast({
+          title: "Request submitted!",
+          description: "We'll get back to you shortly.",
+        });
+        
+        setFormData({ name: "", company: "", email: "" });
+      } else {
+        toast({
+          variant: "destructive",
+          title: "Failed to send email",
+          description: "Please try again or contact us directly at info@atidot.ai",
+        });
+      }
     } catch (error) {
       toast({
         variant: "destructive",
         title: "Something went wrong",
-        description: "Please try again later.",
+        description: "Please try again later or email us directly at info@atidot.ai",
       });
     } finally {
       setIsSubmitting(false);
