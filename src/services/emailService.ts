@@ -4,7 +4,7 @@ import emailjs from 'emailjs-com';
 // Initialize EmailJS with your User ID
 export const initEmailJS = () => {
   // Replace this with your actual EmailJS User ID from Account > API Keys
-  emailjs.init("YOUR_USER_ID_HERE");
+  emailjs.init("Iyqv8b4fIdxbE4zUc");
 };
 
 export interface EmailData {
@@ -24,8 +24,8 @@ export const sendEmail = async (data: EmailData): Promise<boolean> => {
     };
     
     await emailjs.send(
-      "YOUR_SERVICE_ID_HERE", // Replace with your EmailJS service ID
-      "YOUR_TEMPLATE_ID_HERE", // Replace with your EmailJS template ID
+      "service_1p980cj", // Replace with your EmailJS service ID
+      "template_xuepj6b", // Replace with your EmailJS template ID
       templateParams
     );
     
