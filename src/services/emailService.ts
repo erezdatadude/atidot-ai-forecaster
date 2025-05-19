@@ -2,8 +2,8 @@
 import emailjs from 'emailjs-com';
 
 // Initialize EmailJS with your User ID
-// You'll need to replace this with your actual EmailJS User ID
 export const initEmailJS = () => {
+  // Replace this with your actual EmailJS User ID from Account > API Keys
   emailjs.init("YOUR_USER_ID_HERE");
 };
 
