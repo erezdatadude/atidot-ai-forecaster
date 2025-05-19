@@ -21,6 +21,7 @@ export const sendEmail = async (data: EmailData): Promise<boolean> => {
       from_company: data.company,
       from_email: data.email,
       subject: "Contact Request from ATIDOT.ai website",
+      message: "No message included in this version.",
     };
     
     await emailjs.send(
