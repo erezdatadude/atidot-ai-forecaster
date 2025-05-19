@@ -3,12 +3,12 @@ import { CheckCircle } from "lucide-react";
 
 const SolutionSection = () => {
   const capabilities = [
-    "Provides AI-powered time-series modeling for accurate sales and demand forecasting across all products and customers—delivering weekly and monthly forecasts 52 weeks ahead.",
+    "Provides AI-powered modeling for accurate sales and demand forecasting across all products and customers—delivering weekly and monthly forecasts 52 weeks ahead.",
     "Seamlessly connects with existing ERP, CRM, and other data systems through secure API/ETL connections.",
     "Identifies anomalies in sales patterns and provides actionable insights to drive improved forecast performance.",
     "Features advanced machine learning capabilities that continuously refine accuracy through feedback loops and pattern recognition.",
     "Scales to handle thousands of SKU/Client combinations with consistent performance and precision.",
-    "Adapts rapidly to market shifts and seasonal patterns through advanced time-series analytics and forecasting models."
+    "Adapts rapidly to market shifts and seasonal patterns through advanced analytics and forecasting models."
   ];
 
   return (
@@ -20,7 +20,7 @@ const SolutionSection = () => {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div>
             <h2 className="text-3xl md:text-4xl font-bold mb-6 gradient-text">
-              Advanced Time-Series Forecasting Technology
+              Advanced Forecasting Technology
             </h2>
             
             <p className="text-lg text-gray-700 mb-8">
@@ -45,7 +45,7 @@ const SolutionSection = () => {
                   <div className="text-6xl font-bold mb-4">ATIDOT.ai</div>
                   <div className="text-xl">Sales & Demand Forecasting</div>
                   <div className="mt-6 text-sm">
-                    Advanced time-series visualization, accuracy tracking, and real-time alerting
+                    Advanced visualization, accuracy tracking, and real-time alerting
                     capabilities for superior sales and demand forecasting performance
                   </div>
                 </div>

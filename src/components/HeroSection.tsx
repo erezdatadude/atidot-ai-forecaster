@@ -35,11 +35,11 @@ const HeroSection = () => {
           </h1>
           
           <p className="text-xl md:text-2xl font-medium mb-6 text-gray-700">
-            AI-Based Advanced Time-Series Modeling for Sales & Demand Forecasting
+            AI-Based Advanced Modeling for Sales & Demand Forecasting
           </p>
           
           <p className="text-lg md:text-xl mb-10 text-gray-600 max-w-3xl mx-auto">
-            ATIDOT.ai delivers cutting-edge AI-powered time-series forecasting technology that enhances 
+            ATIDOT.ai delivers cutting-edge AI-powered forecasting technology that enhances 
             accuracy, granularity, and efficiency across your entire sales and demand forecasting process.
           </p>
 

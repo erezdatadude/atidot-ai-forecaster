@@ -40,15 +40,14 @@ const Index = () => {
             <div>
               <h4 className="font-semibold mb-4">Resources</h4>
               <ul className="space-y-2 text-gray-400">
-                <li><a href="#" className="hover:text-white transition-colors">Documentation</a></li>
-                <li><a href="#" className="hover:text-white transition-colors">Blog</a></li>
+                {/* Documentation and Blog links hidden as requested */}
               </ul>
             </div>
             
             <div>
               <h4 className="font-semibold mb-4">Contact</h4>
               <ul className="space-y-2 text-gray-400">
-                <li><a href="mailto:erez@dataDudes.ai" className="hover:text-white transition-colors">Email: erez@dataDudes.ai</a></li>
+                <li><a href="mailto:info@atidot.ai" className="hover:text-white transition-colors">Email: info@atidot.ai</a></li>
                 <li><a href="/contact" className="hover:text-white transition-colors">Contact Form</a></li>
               </ul>
             </div>

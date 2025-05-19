@@ -30,9 +30,9 @@ const Contact = () => {
       // Here we just simulate a successful submission
       await new Promise(resolve => setTimeout(resolve, 1000));
       
-      // Send email to erez@dataDudes.ai
+      // Send email to info@atidot.ai
       console.log("Demo request submitted:", {
-        to: "erez@dataDudes.ai",
+        to: "info@atidot.ai",
         subject: "Contact Request from ATIDOT.ai website",
         body: `
           Name: ${formData.name}
@@ -142,7 +142,7 @@ const Contact = () => {
             
             <div className="mt-8 text-center">
               <p className="text-gray-600">
-                Or email us directly at: <a href="mailto:erez@dataDudes.ai" className="text-brand-blue hover:underline">erez@dataDudes.ai</a>
+                Or email us directly at: <a href="mailto:info@atidot.ai" className="text-brand-blue hover:underline">info@atidot.ai</a>
               </p>
             </div>
           </div>
@@ -171,15 +171,14 @@ const Contact = () => {
               <h4 className="font-semibold mb-4">Resources</h4>
               <ul className="space-y-2 text-gray-400">
                 <li><a href="#" className="hover:text-white transition-colors">Case Studies</a></li>
-                <li><a href="#" className="hover:text-white transition-colors">Documentation</a></li>
-                <li><a href="#" className="hover:text-white transition-colors">Blog</a></li>
+                {/* Documentation and Blog links hidden as requested */}
               </ul>
             </div>
             
             <div>
               <h4 className="font-semibold mb-4">Contact</h4>
               <ul className="space-y-2 text-gray-400">
-                <li><a href="mailto:erez@dataDudes.ai" className="text-gray-400 hover:text-white transition-colors">Email: erez@dataDudes.ai</a></li>
+                <li><a href="mailto:info@atidot.ai" className="text-gray-400 hover:text-white transition-colors">Email: info@atidot.ai</a></li>
                 <li><a href="/contact" className="hover:text-white transition-colors">Contact Form</a></li>
               </ul>
             </div>
