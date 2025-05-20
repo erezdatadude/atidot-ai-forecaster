@@ -32,7 +32,11 @@ const CTASection = () => {
     setIsSubmitting(true);
 
     try {
-      const success = await sendEmail(formData);
+      console.log("Sending email with data:", formData);
+      const success = await sendEmail({
+        ...formData,
+        message: "Request for ATIDOT.ai platform demonstration"
+      });
       
       if (success) {
         toast({
@@ -50,6 +54,7 @@ const CTASection = () => {
         });
       }
     } catch (error) {
+      console.error("Detailed error:", error);
       toast({
         variant: "destructive",
         title: "Something went wrong",

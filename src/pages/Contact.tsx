@@ -3,6 +3,7 @@ import { useState, useEffect } from "react";
 import Navbar from "@/components/Navbar";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
+import { Textarea } from "@/components/ui/textarea";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { useToast } from "@/hooks/use-toast";
 import { Check } from "lucide-react";
@@ -14,6 +15,7 @@ const Contact = () => {
     name: "",
     company: "",
     email: "",
+    message: ""
   });
   const { toast } = useToast();
 
@@ -22,7 +24,9 @@ const Contact = () => {
     initEmailJS();
   }, []);
 
-  const handleInputChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+  const handleInputChange = (
+    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
+  ) => {
     const { name, value } = e.target;
     setFormData((prev) => ({ ...prev, [name]: value }));
   };
@@ -32,6 +36,7 @@ const Contact = () => {
     setIsSubmitting(true);
 
     try {
+      console.log("Contact form - sending email with data:", formData);
       const success = await sendEmail(formData);
       
       if (success) {
@@ -40,7 +45,7 @@ const Contact = () => {
           description: "We'll get back to you shortly.",
         });
         
-        setFormData({ name: "", company: "", email: "" });
+        setFormData({ name: "", company: "", email: "", message: "" });
       } else {
         toast({
           variant: "destructive",
@@ -49,6 +54,7 @@ const Contact = () => {
         });
       }
     } catch (error) {
+      console.error("Contact form detailed error:", error);
       toast({
         variant: "destructive",
         title: "Something went wrong",
@@ -126,6 +132,21 @@ const Contact = () => {
                       required
                       className="w-full"
                       placeholder="your.email@company.com"
+                    />
+                  </div>
+                  
+                  <div>
+                    <label htmlFor="message" className="block text-sm font-medium text-gray-700 mb-1">
+                      Message (Optional)
+                    </label>
+                    <Textarea
+                      id="message"
+                      name="message"
+                      value={formData.message}
+                      onChange={handleInputChange}
+                      className="w-full"
+                      placeholder="Tell us more about your needs..."
+                      rows={4}
                     />
                   </div>
                   
