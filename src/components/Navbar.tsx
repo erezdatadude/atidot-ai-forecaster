@@ -1,5 +1,3 @@
-
-import { Button } from "@/components/ui/button";
 import { useState, useEffect } from "react";
 import { useNavigate, useLocation } from "react-router-dom";
 
@@ -16,14 +14,11 @@ const Navbar = () => {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-  // Function to scroll to CTA section and trigger the demo button click
   const scrollToCta = () => {
     if (location.pathname === '/') {
       const ctaSection = document.querySelector('.gradient-bg');
       if (ctaSection) {
         ctaSection.scrollIntoView({ behavior: 'smooth' });
-        
-        // Give time for the scroll to complete before attempting to click the button
         setTimeout(() => {
           const demoButton = document.querySelector('.gradient-bg .bg-white') as HTMLButtonElement;
           if (demoButton) {
@@ -44,12 +39,12 @@ const Navbar = () => {
     >
       <div className="container mx-auto px-4 flex items-center justify-between">
         <div className="flex items-center">
-          <a href="/" className="text-xl font-bold text-brand-blue">
+          <a href="/" className="text-xl font-bold text-brand-blue font-sans">
             ATIDOT<span className="text-brand-blue2">.ai</span>
           </a>
         </div>
 
-        <nav className="hidden md:flex items-center space-x-6">
+        <nav className="hidden md:flex items-center space-x-6 font-sans">
           {location.pathname === '/' ? (
             <>
               <a href="#problem" className="text-gray-600 hover:text-brand-blue transition-colors">
@@ -82,15 +77,6 @@ const Navbar = () => {
             </>
           )}
         </nav>
-
-        <div>
-          <Button
-            onClick={scrollToCta}
-            className="bg-brand-blue hover:bg-brand-darkblue text-white transition-colors"
-          >
-            Request Demo
-          </Button>
-        </div>
       </div>
     </header>
   );

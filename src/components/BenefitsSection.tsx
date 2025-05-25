@@ -1,4 +1,4 @@
-
+import { motion } from "framer-motion";
 import AnimatedCounter from "./AnimatedCounter";
 
 const BenefitsSection = () => {
@@ -6,10 +6,6 @@ const BenefitsSection = () => {
     {
       title: "Superior Forecast Accuracy",
       description: "Advanced algorithms deliver significantly higher accuracy rates across your product portfolio."
-    },
-    {
-      title: "Optimized Inventory Management",
-      description: "Data-driven inventory decisions based on precise demand forecasts across all SKUs."
     },
     {
       title: "Proactive Demand Management",
@@ -26,13 +22,13 @@ const BenefitsSection = () => {
   ];
 
   return (
-    <section id="benefits" className="py-20 bg-white">
-      <div className="container mx-auto px-4">
+    <section id="benefits" className="py-32 px-6 bg-gray-50 rounded-2xl">
+      <div className="container mx-auto">
         <div className="text-center max-w-3xl mx-auto mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold mb-6 text-brand-blue">
+          <h2 className="text-3xl md:text-4xl font-bold mb-6 text-brand-blue font-sans">
             Performance Advantages
           </h2>
-          <p className="text-lg text-gray-600">
+          <p className="text-lg text-gray-600 font-sans">
             ATIDOT.ai delivers measurable improvements across key performance indicators for your organization.
           </p>
         </div>
@@ -41,40 +37,39 @@ const BenefitsSection = () => {
           <div className="lg:col-span-1 flex flex-col justify-center">
             <div className="space-y-6">
               {benefits.map((benefit, index) => (
-                <div key={index} className="bg-gray-50 p-6 rounded-lg shadow-sm hover:shadow-md transition-shadow">
-                  <h3 className="text-xl font-semibold mb-2 text-brand-blue">{benefit.title}</h3>
-                  <p className="text-gray-600">{benefit.description}</p>
-                </div>
+                <motion.div
+                  key={index}
+                  className="bg-white p-6 rounded-xl shadow-md hover:shadow-xl transition-all"
+                  initial={{ opacity: 0, y: 20 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true }}
+                  transition={{ duration: 0.5, delay: index * 0.1 }}
+                >
+                  <h3 className="text-xl font-semibold mb-2 text-brand-blue font-sans">{benefit.title}</h3>
+                  <p className="text-gray-600 font-sans">{benefit.description}</p>
+                </motion.div>
               ))}
             </div>
           </div>
-          
+
           <div className="lg:col-span-2">
             <div className="bg-gradient-to-br from-brand-blue to-brand-darkblue rounded-xl p-8 text-white shadow-xl h-full flex flex-col justify-center">
-              <h3 className="text-2xl font-bold mb-10 text-center">Performance Impact</h3>
-              
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-10 mb-8">
-                <div className="text-center">
-                  <AnimatedCounter target={30} suffix="%" />
-                  <p className="mt-2 text-lg">Improved Forecast Accuracy</p>
-                </div>
-                <div className="text-center">
-                  <AnimatedCounter target={25} suffix="%" />
-                  <p className="mt-2 text-lg">Reduced Safety Stock</p>
-                </div>
-                <div className="text-center">
+              <h3 className="text-2xl font-bold mb-10 text-center font-sans">Performance Impact</h3>
+
+              <div className="flex flex-col items-center space-y-8 mb-8 text-center">
+                <div>
                   <AnimatedCounter target={40} suffix="%" />
-                  <p className="mt-2 text-lg">Faster Response to Market Shifts</p>
+                  <p className="mt-2 text-lg font-sans text-white">Faster Scenario Planning</p>
                 </div>
-                <div className="text-center">
-                  <AnimatedCounter target={20} suffix="%" />
-                  <p className="mt-2 text-lg">Increase in Service Levels</p>
+                <div>
+                  <AnimatedCounter target={30} suffix="%" />
+                  <p className="mt-2 text-lg font-sans text-white">Improved Forecast Accuracy</p>
+                </div>
+                <div>
+                  <AnimatedCounter target={15} suffix="%" />
+                  <p className="mt-2 text-lg font-sans text-white">Inventory Reduction</p>
                 </div>
               </div>
-              
-              <p className="text-center text-lg italic">
-                "ATIDOT.ai has transformed our demand forecasting capabilities with its advanced analytics platform."
-              </p>
             </div>
           </div>
         </div>
