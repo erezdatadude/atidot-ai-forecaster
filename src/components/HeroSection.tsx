@@ -11,12 +11,19 @@ const HeroSection = () => {
             Forecast demand across every product and customer combination — and plan your supply chain accordingly.
           </p>
 
-          <a
-            href="#contact-cta"
+          <button
+            onClick={() => {
+              const section = document.getElementById("contact-cta");
+              const button = document.getElementById("get-started-button");
+              if (section) section.scrollIntoView({ behavior: "smooth" });
+              setTimeout(() => {
+                if (button) button.click();
+              }, 600); // small delay to let scroll finish
+            }}
             className="inline-block bg-brand-blue hover:bg-brand-darkblue text-white px-8 py-6 text-lg rounded-xl transition-colors text-center"
           >
             Book a Demo
-          </a>
+          </button>
         </div>
       </div>
     </section>

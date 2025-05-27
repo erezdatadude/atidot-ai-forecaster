@@ -5,9 +5,10 @@ const CTASection = () => {
         Ready to see how accurate forecasting can transform your operations?
       </h2>
       <p className="text-gray-600 mt-4 max-w-xl mx-auto">
-        Book a personalized walkthrough or start a free pilot today.
+        Book a personalized walkthrough or start a pilot today.
       </p>
       <a
+        id="get-started-button"
         href="/contact"
         className="inline-block mt-8 bg-[#1F4B99] text-white px-8 py-3 rounded-xl text-lg hover:bg-blue-800 transition"
       >

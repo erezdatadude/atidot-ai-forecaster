@@ -28,7 +28,7 @@ const FeaturesSection = () => {
     },
     {
       icon: <Database className="h-10 w-10 text-brand-blue" />,
-      title: "Seamless Data Integration",
+      title: "Easy Data Integration",
       description: "Enterprise-grade connectors for your existing systems with minimal IT implementation requirements."
     },
     {
@@ -78,7 +78,7 @@ const FeaturesSection = () => {
 
         <div className="mt-16 text-center">
           <p className="text-brand-blue font-semibold text-lg font-sans">
-            Enterprise-grade scalability across thousands of product-customer combinations
+            Connects to your existing systems with minimal IT implementation requirements.
           </p>
         </div>
       </div>
