@@ -1,23 +1,25 @@
-import { motion } from "framer-motion";
-
 const HeroSection = () => {
   return (
-    <motion.section
-      className="bg-white text-gray-900 py-24 px-6 text-center"
-      initial={{ opacity: 0, y: 30 }}
-      animate={{ opacity: 1, y: 0 }}
-      transition={{ duration: 0.6 }}
-    >
-      <h1 className="text-5xl font-bold leading-tight">
-        AI-Based Modeling for Sales & Demand Forecasting
-      </h1>
-      <p className="mt-4 text-lg text-gray-600">
-        Forecast demand across every product and customer combination — and plan your supply chain accordingly.
-      </p>
-      <button className="mt-8 bg-[#1F4B99] text-white px-8 py-3 rounded-xl text-lg hover:bg-blue-800 transition">
-        Book a Demo
-      </button>
-    </motion.section>
+    <section className="pt-28 pb-20 md:pt-32 md:pb-28 relative overflow-hidden">
+      <div className="container mx-auto px-4 relative z-10">
+        <div className="text-center max-w-4xl mx-auto">
+          <h1 className="text-4xl md:text-6xl font-bold mb-6 gradient-text">
+            AI-Based Modeling for Sales & Demand Forecasting
+          </h1>
+
+          <p className="text-lg md:text-xl mb-10 text-gray-600 max-w-3xl mx-auto">
+            Forecast demand across every product and customer combination — and plan your supply chain accordingly.
+          </p>
+
+          <a
+            href="#contact-cta"
+            className="inline-block bg-brand-blue hover:bg-brand-darkblue text-white px-8 py-6 text-lg rounded-xl transition-colors text-center"
+          >
+            Book a Demo
+          </a>
+        </div>
+      </div>
+    </section>
   );
 };
 

@@ -1,6 +1,6 @@
 const CTASection = () => {
   return (
-    <section className="bg-gray-50 text-center py-20 px-6">
+    <section id="contact-cta" className="bg-gray-50 text-center py-20 px-6">
       <h2 className="text-3xl font-semibold text-gray-900">
         Ready to see how accurate forecasting can transform your operations?
       </h2>
