@@ -3,30 +3,10 @@ import { motion } from "framer-motion";
 import { AlertTriangle, Clock, ShieldX, TrendingDown } from "lucide-react";
 
 const problems = [
-  {
-    icon: TrendingDown,
-    title: "Inaccurate Forecasts",
-    description:
-      "Traditional models rely on limited historical data and static assumptions, leading to chronic over- or under-forecasting that erodes margins.",
-  },
-  {
-    icon: Clock,
-    title: "Slow Scenario Planning",
-    description:
-      "Manual spreadsheet-based planning takes weeks to produce results, leaving teams unable to respond to sudden market shifts in time.",
-  },
-  {
-    icon: ShieldX,
-    title: "Stockouts & Overstock",
-    description:
-      "Poor demand visibility causes costly stockouts that lose revenue and excess inventory that ties up working capital.",
-  },
-  {
-    icon: AlertTriangle,
-    title: "No Early Warning System",
-    description:
-      "By the time problems surface in traditional reporting, it's already too late — the damage to customer satisfaction and revenue is done.",
-  },
+  { icon: TrendingDown, title: "Inaccurate Forecasts", description: "Static models and limited data erode margins." },
+  { icon: Clock, title: "Slow Planning", description: "Weeks of manual spreadsheets can't keep pace." },
+  { icon: ShieldX, title: "Stockouts & Overstock", description: "Poor visibility costs revenue and ties up capital." },
+  { icon: AlertTriangle, title: "No Early Warnings", description: "Problems surface too late to act on." },
 ];
 
 const ProblemSection = () => {
@@ -43,17 +23,15 @@ const ProblemSection = () => {
           <span className="text-sm font-semibold text-brand-blue uppercase tracking-wider">
             The Challenge
           </span>
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mt-3 mb-5">
-            Why Traditional Forecasting Falls Short
+          <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mt-3 mb-5">
+            Legacy Forecasting<br />Is Broken
           </h2>
-          <p className="text-lg text-gray-600 leading-relaxed">
-            Manufacturing and distribution companies lose millions annually to
-            inaccurate demand planning. Legacy tools simply can't keep pace with
-            today's volatile markets.
+          <p className="text-xl text-gray-500">
+            Companies lose millions to outdated demand planning tools.
           </p>
         </motion.div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-4xl mx-auto">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 max-w-5xl mx-auto">
           {problems.map((item, i) => (
             <motion.div
               key={i}
@@ -61,15 +39,13 @@ const ProblemSection = () => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: i * 0.1 }}
-              className="flex gap-4 p-6 bg-white rounded-xl border border-gray-100 shadow-sm"
+              className="text-center p-6 bg-white rounded-xl border border-gray-100 shadow-sm"
             >
-              <div className="flex-shrink-0 w-12 h-12 rounded-lg bg-red-50 flex items-center justify-center">
-                <item.icon className="w-6 h-6 text-red-500" />
+              <div className="w-14 h-14 rounded-xl bg-red-50 flex items-center justify-center mx-auto mb-4">
+                <item.icon className="w-7 h-7 text-red-500" />
               </div>
-              <div>
-                <h3 className="font-semibold text-gray-900 mb-1">{item.title}</h3>
-                <p className="text-sm text-gray-600 leading-relaxed">{item.description}</p>
-              </div>
+              <h3 className="font-bold text-gray-900 text-lg mb-2">{item.title}</h3>
+              <p className="text-base text-gray-500">{item.description}</p>
             </motion.div>
           ))}
         </div>

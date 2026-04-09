@@ -1,33 +1,36 @@
 
 import { motion } from "framer-motion";
-import { CheckCircle2 } from "lucide-react";
+import { CheckCircle2, BarChart3, Bell, Plug } from "lucide-react";
 
 const features = [
   {
+    icon: BarChart3,
     category: "Forecasting Engine",
     items: [
-      "Zero-shot predictions — no historical model training required",
-      "Weekly and monthly forecasts at product, customer, and regional level",
-      "52-week rolling prediction window updated continuously",
-      "Multi-model ensemble for maximum accuracy and reliability",
+      "Zero-shot — no historical training required",
+      "Weekly & monthly at product/customer level",
+      "52-week rolling prediction window",
+      "Multi-model ensemble for reliability",
     ],
   },
   {
+    icon: Bell,
     category: "Alert Intelligence",
     items: [
-      "Atypical order detection flags unusual purchase patterns",
-      "Stockout risk warnings before inventory runs dry",
-      "Stagnant inventory identification to free up working capital",
-      "Market trend alerts based on external demand signals",
+      "Atypical order detection",
+      "Stockout risk warnings",
+      "Stagnant inventory alerts",
+      "Market trend signals",
     ],
   },
   {
-    category: "Integration & Delivery",
+    icon: Plug,
+    category: "Integration",
     items: [
-      "Direct ERP/WMS connectivity (SAP, Oracle, and more)",
-      "Power BI and Tableau dashboard-ready outputs",
-      "Automated report generation and distribution",
-      "REST API for custom integrations and workflows",
+      "Direct ERP/WMS connectivity",
+      "Power BI & Tableau ready",
+      "Automated report distribution",
+      "REST API for custom workflows",
     ],
   },
 ];
@@ -44,19 +47,17 @@ const FeaturesSection = () => {
           className="text-center max-w-3xl mx-auto mb-16"
         >
           <span className="text-sm font-semibold text-brand-blue uppercase tracking-wider">
-            Platform Capabilities
+            Capabilities
           </span>
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mt-3 mb-5">
-            Everything You Need for Intelligent Forecasting
+          <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mt-3 mb-5">
+            Everything You Need
           </h2>
-          <p className="text-lg text-gray-600 leading-relaxed">
-            A comprehensive platform built for the complexity of modern supply
-            chains — from AI-powered predictions to actionable alerts and
-            seamless integration.
+          <p className="text-xl text-gray-500">
+            From AI predictions to actionable alerts and seamless integration.
           </p>
         </motion.div>
 
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 max-w-5xl mx-auto mb-16">
           {features.map((group, i) => (
             <motion.div
               key={i}
@@ -66,20 +67,42 @@ const FeaturesSection = () => {
               transition={{ duration: 0.5, delay: i * 0.15 }}
               className="bg-white rounded-2xl p-8 border border-gray-100 shadow-sm"
             >
-              <h3 className="text-lg font-bold text-gray-900 mb-6 pb-4 border-b border-gray-100">
-                {group.category}
-              </h3>
+              <div className="w-12 h-12 rounded-xl bg-brand-blue/10 flex items-center justify-center mb-4">
+                <group.icon className="w-6 h-6 text-brand-blue" />
+              </div>
+              <h3 className="text-xl font-bold text-gray-900 mb-6">{group.category}</h3>
               <ul className="space-y-4">
                 {group.items.map((item, j) => (
                   <li key={j} className="flex items-start gap-3">
                     <CheckCircle2 className="w-5 h-5 text-brand-blue flex-shrink-0 mt-0.5" />
-                    <span className="text-sm text-gray-700 leading-relaxed">{item}</span>
+                    <span className="text-base text-gray-600">{item}</span>
                   </li>
                 ))}
               </ul>
             </motion.div>
           ))}
         </div>
+
+        {/* Screenshot placeholder */}
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.6 }}
+          className="max-w-5xl mx-auto"
+        >
+          <div className="rounded-2xl border-2 border-dashed border-gray-200 bg-white p-4">
+            <div className="aspect-video rounded-xl bg-gradient-to-br from-gray-50 to-gray-100 flex items-center justify-center">
+              <div className="text-center">
+                <div className="w-16 h-16 rounded-2xl bg-brand-blue/10 flex items-center justify-center mx-auto mb-4">
+                  <Bell className="w-8 h-8 text-brand-blue" />
+                </div>
+                <p className="text-lg font-semibold text-gray-400">Alert Dashboard Screenshot</p>
+                <p className="text-sm text-gray-300 mt-1">Replace with actual Atidot.ai alert view</p>
+              </div>
+            </div>
+          </div>
+        </motion.div>
       </div>
     </section>
   );

@@ -6,6 +6,7 @@ import SolutionSection from "@/components/SolutionSection";
 import FeaturesSection from "@/components/FeaturesSection";
 import BenefitsSection from "@/components/BenefitsSection";
 import CaseStudySection from "@/components/CaseStudySection";
+import VideoSection from "@/components/VideoSection";
 import HowItWorksSection from "@/components/HowItWorksSection";
 import CTASection from "@/components/CTASection";
 import Footer from "@/components/Footer";
@@ -15,9 +16,10 @@ const Index = () => {
     <div className="min-h-screen bg-white">
       <Navbar />
       <HeroSection />
-      <SolutionSection />
-      <BenefitsSection />
       <ProblemSection />
+      <SolutionSection />
+      <VideoSection />
+      <BenefitsSection />
       <FeaturesSection />
       <CaseStudySection />
       <HowItWorksSection />
