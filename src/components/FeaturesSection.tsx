@@ -1,85 +1,84 @@
+
 import { motion } from "framer-motion";
-import { Card, CardContent } from "@/components/ui/card";
-import {
-  Database,
-  Layers,
-  Search,
-  Gauge,
-  ArrowRight,
-  CheckCheck
-} from "lucide-react";
+import { CheckCircle2 } from "lucide-react";
+
+const features = [
+  {
+    category: "Forecasting Engine",
+    items: [
+      "Zero-shot predictions — no historical model training required",
+      "Weekly and monthly forecasts at product, customer, and regional level",
+      "52-week rolling prediction window updated continuously",
+      "Multi-model ensemble for maximum accuracy and reliability",
+    ],
+  },
+  {
+    category: "Alert Intelligence",
+    items: [
+      "Atypical order detection flags unusual purchase patterns",
+      "Stockout risk warnings before inventory runs dry",
+      "Stagnant inventory identification to free up working capital",
+      "Market trend alerts based on external demand signals",
+    ],
+  },
+  {
+    category: "Integration & Delivery",
+    items: [
+      "Direct ERP/WMS connectivity (SAP, Oracle, and more)",
+      "Power BI and Tableau dashboard-ready outputs",
+      "Automated report generation and distribution",
+      "REST API for custom integrations and workflows",
+    ],
+  },
+];
 
 const FeaturesSection = () => {
-  const features = [
-    {
-      icon: <Layers className="h-10 w-10 text-brand-blue" />,
-      title: "Enhanced Granularity",
-      description: "Customer × SKU level forecasting for precise planning and inventory optimization."
-    },
-    {
-      icon: <ArrowRight className="h-10 w-10 text-brand-blue" />,
-      title: "52-Week Rolling Forecasts",
-      description: "Extended planning horizon with AI-enhanced forecasts for superior strategic decision-making."
-    },
-    {
-      icon: <Search className="h-10 w-10 text-brand-blue" />,
-      title: "Intelligent Anomaly Detection",
-      description: "Advanced algorithms identify potential demand shifts before they impact your business."
-    },
-    {
-      icon: <Database className="h-10 w-10 text-brand-blue" />,
-      title: "Easy Data Integration",
-      description: "Enterprise-grade connectors for your existing systems with minimal IT implementation requirements."
-    },
-    {
-      icon: <CheckCheck className="h-10 w-10 text-brand-blue" />,
-      title: "Continuous Learning",
-      description: "Self-optimizing algorithms that improve forecast accuracy through pattern recognition and feedback."
-    },
-    {
-      icon: <Gauge className="h-10 w-10 text-brand-blue" />,
-      title: "Dashboard Compatibility",
-      description: "API and export capabilities compatible with all major business intelligence platforms."
-    }
-  ];
-
   return (
-    <section id="features" className="py-32 px-6 bg-brand-light rounded-2xl">
-      <div className="container mx-auto">
-        <div className="text-center max-w-3xl mx-auto mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold mb-6 text-brand-blue font-sans">
-            Advanced Capabilities
+    <section id="features" className="section-padding bg-gray-50">
+      <div className="container mx-auto px-6 lg:px-8">
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.6 }}
+          className="text-center max-w-3xl mx-auto mb-16"
+        >
+          <span className="text-sm font-semibold text-brand-blue uppercase tracking-wider">
+            Platform Capabilities
+          </span>
+          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mt-3 mb-5">
+            Everything You Need for Intelligent Forecasting
           </h2>
-          <p className="text-lg text-gray-600 font-sans">
-            ATIDOT.ai provides sophisticated forecasting technology that enhances
-            your organization's planning and execution capabilities.
+          <p className="text-lg text-gray-600 leading-relaxed">
+            A comprehensive platform built for the complexity of modern supply
+            chains — from AI-powered predictions to actionable alerts and
+            seamless integration.
           </p>
-        </div>
+        </motion.div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {features.map((feature, index) => (
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
+          {features.map((group, i) => (
             <motion.div
-              key={index}
+              key={i}
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
-              transition={{ duration: 0.5, delay: index * 0.1 }}
+              transition={{ duration: 0.5, delay: i * 0.15 }}
+              className="bg-white rounded-2xl p-8 border border-gray-100 shadow-sm"
             >
-              <Card className="border-none shadow-lg hover:shadow-xl hover:-translate-y-1 transition-all duration-300 rounded-xl">
-                <CardContent className="p-6">
-                  <div className="mb-4">{feature.icon}</div>
-                  <h3 className="text-xl font-semibold mb-3 text-brand-blue font-sans">{feature.title}</h3>
-                  <p className="text-gray-600 font-sans">{feature.description}</p>
-                </CardContent>
-              </Card>
+              <h3 className="text-lg font-bold text-gray-900 mb-6 pb-4 border-b border-gray-100">
+                {group.category}
+              </h3>
+              <ul className="space-y-4">
+                {group.items.map((item, j) => (
+                  <li key={j} className="flex items-start gap-3">
+                    <CheckCircle2 className="w-5 h-5 text-brand-blue flex-shrink-0 mt-0.5" />
+                    <span className="text-sm text-gray-700 leading-relaxed">{item}</span>
+                  </li>
+                ))}
+              </ul>
             </motion.div>
           ))}
-        </div>
-
-        <div className="mt-16 text-center">
-          <p className="text-brand-blue font-semibold text-lg font-sans">
-            Connects to your existing systems with minimal IT implementation requirements.
-          </p>
         </div>
       </div>
     </section>

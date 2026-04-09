@@ -16,9 +16,8 @@ export interface EmailData {
 
 export const sendEmail = async (data: EmailData): Promise<boolean> => {
   try {
-    // Change the email to a Gmail address which is more reliable
     const templateParams = {
-      to_email: "your.email@gmail.com", // Replace this with your actual working email address
+      to_email: "info@atidot.ai",
       from_name: data.name,
       from_company: data.company,
       from_email: data.email,
