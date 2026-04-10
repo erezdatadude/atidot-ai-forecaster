@@ -29,7 +29,7 @@ const FeaturesSection = () => {
     {
       icon: <Database className="h-10 w-10 text-brand-blue" />,
       title: "Easy Data Integration",
-      description: "Enterprise-grade connectors for your existing systems with minimal IT implementation requirements."
+      description: "Connects t your existing systems with minimal IT implementation requirements."
     },
     {
       icon: <CheckCheck className="h-10 w-10 text-brand-blue" />,
