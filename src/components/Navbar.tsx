@@ -31,9 +31,8 @@ const Navbar = () => {
   const navLinks = [
     { label: "Solution", action: () => scrollToSection("solution") },
     { label: "Features", action: () => scrollToSection("features") },
-    { label: "Case Study", action: () => scrollToSection("case-study") },
+    { label: "Use Cases", action: () => scrollToSection("case-study") },
     { label: "How It Works", action: () => scrollToSection("how-it-works") },
-    { label: "About", action: () => navigate("/about") },
   ];
 
   return (

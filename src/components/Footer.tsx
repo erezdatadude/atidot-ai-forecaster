@@ -33,7 +33,7 @@ const Footer = () => {
               {[
                 { label: "How It Works", action: () => scrollToSection("how-it-works") },
                 { label: "Features", action: () => scrollToSection("features") },
-                { label: "Case Study", action: () => scrollToSection("case-study") },
+                { label: "Use Cases", action: () => scrollToSection("case-study") },
                 { label: "Benefits", action: () => scrollToSection("benefits") },
               ].map((link) => (
                 <li key={link.label}>
@@ -54,14 +54,6 @@ const Footer = () => {
               Company
             </h4>
             <ul className="space-y-3">
-              <li>
-                <button
-                  onClick={() => navigate("/about")}
-                  className="text-gray-400 text-sm hover:text-white transition-colors"
-                >
-                  About Us
-                </button>
-              </li>
               <li>
                 <button
                   onClick={() => navigate("/contact")}
