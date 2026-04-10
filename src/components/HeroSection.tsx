@@ -33,9 +33,9 @@ const HeroSection = () => {
             </h1>
 
             <p className="text-lg md:text-xl text-gray-600 max-w-2xl mx-auto mb-10 leading-relaxed">
-              Next-generation AI forecasting that transforms raw sales data into
-              actionable intelligence — delivering weekly predictions at
-              sub-SKU granularity with zero historical model training required.
+              Next-generation AI forecasting that transforms raw sales data
+              into actionable intelligence — delivering weekly predictions at
+              product and customer level, ready from day one.
             </p>
 
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
@@ -67,7 +67,7 @@ const HeroSection = () => {
             {[
               { icon: TrendingUp, stat: "30%+", label: "Improved Forecast Accuracy" },
               { icon: BarChart3, stat: "52 Weeks", label: "Rolling Prediction Window" },
-              { icon: Zap, stat: "Zero-Shot", label: "No Historical Training Needed" },
+              { icon: Zap, stat: "Day One", label: "Accurate Forecasts Immediately" },
             ].map((item, i) => (
               <div
                 key={i}

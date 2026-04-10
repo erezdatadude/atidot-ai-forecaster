@@ -7,7 +7,7 @@ const features = [
     icon: BarChart3,
     category: "Forecasting Engine",
     items: [
-      "Zero-shot — no historical training required",
+      "Ready to deploy from day one",
       "Weekly & monthly at product/customer level",
       "52-week rolling prediction window",
       "Multi-model ensemble for reliability",

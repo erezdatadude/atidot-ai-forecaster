@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 import { Brain, BarChart3, Bell, Layers, RefreshCw, Plug } from "lucide-react";
 
 const capabilities = [
-  { icon: Brain, title: "Zero-Shot AI", description: "Accurate predictions from day one — no historical training needed." },
+  { icon: Brain, title: "AI-Powered", description: "Accurate predictions from day one — ready to deploy immediately." },
   { icon: BarChart3, title: "Sub-SKU Granularity", description: "Forecasts by product, customer, region, and channel." },
   { icon: Bell, title: "10 Smart Alerts", description: "Stockout risk, anomalies, and stagnant inventory — caught early." },
   { icon: Layers, title: "52-Week Horizon", description: "Rolling weekly and monthly forecasts, a full year ahead." },
